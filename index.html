@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendar Cita</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contenedor {
+      background-color: #fff3cd; /* Amarillo claro */
+      width: 420px;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative;
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: #c62828; /* Rojo oscuro */
+      font-size: 32px;
+      margin: 0;
+    }
+
+    .ver-historial {
+      position: absolute;
+      top: 25px;
+      right: 30px;
+      color: #1565c0; /* Azul claro */
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 25px;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 14px;
+      background-color: #ffeb3b; /* Amarillo pálido */
+      border: 1px solid #ccc;
+      font-size: 14px;
+      color: #7c4d00;
+      border-radius: 5px;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 14px;
+      background-color: #e53935; /* Rojo brillante */
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .perfil {
+      position: absolute;
+      top: 90px; /* Justo debajo de "Ver Historial" */
+      right: 30px;
+      text-align: center;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .perfil-icono {
+      width: 40px;
+      height: 40px;
+      background-color: #ffb3b3; /* Rojo claro */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 5px auto;
+    }
+
+    .perfil-icono::before {
+      content: '👤'; /* Icono de usuario */
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Agendar Cita</h1>
+    <div class="ver-historial">Ver Historial</div>
+
+    <label for="fecha">Fecha</label>
+    <input type="text" id="fecha" placeholder="Selecciona una fecha">
+
+    <label for="hora">Hora</label>
+    <input type="text" id="hora" placeholder="Selecciona una hora">
+
+    <button class="btn">Reservar</button>
+
+    <div class="perfil">
+      <div class="perfil-icono"></div>
+      <div>Perfil</div>
+    </div>
+  </div>
+</body>
+</html>
